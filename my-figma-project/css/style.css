@@ -17,7 +17,6 @@ body {
     padding: 0 20px;
 }
 
-/* Переменные цветов киберпанк */
 :root {
     --neon-pink: #ff00ff;
     --neon-blue: #00f0ff;
@@ -27,14 +26,13 @@ body {
     --text-light: #e0e0ff;
 }
 
-/* Hero секция — увеличенный и цветной текст по центру */
 .hero {
     min-height: 100vh;
     display: flex;
     align-items: center;
     position: relative;
     overflow: hidden;
-    text-align: center; /* Центрирование текста */
+    text-align: center;
 }
 
 .hero::before {
@@ -56,24 +54,24 @@ body {
 }
 
 .hero h1 {
-    font-size: 5rem; /* Увеличен размер шрифта */
+    font-size: 5rem;
     margin-bottom: 1rem;
     text-shadow: 0 0 10px var(--neon-pink), 0 0 20px var(--neon-pink);
-    color: var(--neon-blue); /* Цвет текста */
-    text-align: center; /* Выравнивание по центру */
+    color: var(--neon-blue);
+    text-align: center;
 }
 
 .neon {
-    color: var(--neon-pink); /* Розовый неоновый цвет */
+    color: var(--neon-pink);
     text-shadow: 0 0 5px var(--neon-pink), 0 0 15px var(--neon-pink);
 }
 
 .subtitle {
-    font-size: 1.5rem; /* Увеличен размер шрифта */
+    font-size: 1.5rem;
     margin-bottom: 2rem;
     opacity: 0.9;
-    color: var(--neon-blue); /* Голубой неоновый цвет */
-    text-align: center; /* Выравнивание по центру */
+    color: var(--neon-blue);
+    text-align: center;
 }
 
 .hero-image {
@@ -86,11 +84,10 @@ body {
     z-index: 0;
 }
 
-/* Секция 2 */
 .section-2 {
     padding: 80px 0;
     background: var(--dark-bg);
-    text-align: center; /* Центрирование текста */
+    text-align: center;
 }
 
 .section-2 .container {
@@ -109,24 +106,23 @@ body {
 }
 
 .content h2 {
-    font-size: 3rem; /* Увеличен размер шрифта */
+    font-size: 3rem;
     margin-bottom: 1rem;
-    color: var(--neon-blue); /* Голубой цвет */
-    text-align: center; /* Выравнивание по центру */
+    color: var(--neon-blue);
+    text-align: center;
 }
 
 .content p {
-    font-size: 1.3rem; /* Увеличен размер шрифта */
+    font-size: 1.3rem;
     opacity: 0.9;
     max-width: 400px;
-    margin: 0 auto; /* Центрирование параграфа */
+    margin: 0 auto;
 }
 
-/* Секция 3 */
 .section-3 {
     padding: 80px 0;
     background: linear-gradient(180deg, #0a0a14 0%, #121225 100%);
-    text-align: center; /* Центрирование текста */
+    text-align: center;
 }
 
 .grid {
@@ -157,22 +153,21 @@ body {
 }
 
 .card h3 {
-    font-size: 2rem; /* Увеличен размер шрифта */
+    font-size: 2rem;
     margin: 1.5rem 0 1rem;
-    color: var(--neon-pink); /* Розовый цвет */
+    color: var(--neon-pink);
 }
 
 .card p {
-    font-size: 1.2rem; /* Увеличен размер шрифта */
+    font-size: 1.2rem;
     padding: 0 1rem 1.5rem;
     opacity: 0.8;
 }
 
-/* Секция 4 */
 .section-4 {
     padding: 80px 0;
     background: var(--dark-bg);
-    text-align: center; /* Центрирование текста */
+    text-align: center;
 }
 
 .section-4 .container {
@@ -180,7 +175,7 @@ body {
     align-items: center;
     gap: 4rem;
     justify-content: space-between;
-    flex-direction: row-reverse; /* изображение справа */
+    flex-direction: row-reverse;
 }
 
 .section-4 .content {
@@ -189,18 +184,17 @@ body {
 }
 
 .section-4 h2 {
-    font-size: 3.2rem; /* Увеличен размер шрифта */
+    font-size: 3.2rem;
     margin-bottom: 1rem;
-    color: var(--neon-blue); /* Голубой цвет */
+    color: var(--neon-blue);
 }
 
 .section-4 p {
-    font-size: 1.4rem; /* Увеличен размер шрифта */
+    font-size: 1.4rem;
     margin-bottom: 2rem;
     opacity: 0.9;
 }
 
-/* Секция 5 */
 .section-5 {
     padding: 80px 0;
     background: linear-gradient(135deg, var(--accent-purple) 0%, var(--neon-pink) 100%);
@@ -208,16 +202,16 @@ body {
 }
 
 .section-5 h2 {
-    font-size: 3.5rem; /* Увеличен размер шрифта */
+    font-size: 3.5rem;
     margin-bottom: 1rem;
-    color: white; /* Белый цвет */
+    color: white;
 }
 
 .section-5 p {
-    font-size: 1.5rem; /* Увеличен размер шрифта */
+    font-size: 1.5rem;
     margin-bottom: 3rem;
     opacity: 0.9;
-    color: var(--neon-blue); /* Голубой цвет */
+    color: var(--neon-blue);
 }
 
 .stats {
@@ -232,21 +226,20 @@ body {
 }
 
 .number {
-    font-size: 3rem; /* Увеличен размер шрифта */
+    font-size: 3rem;
     font-weight: bold;
     display: block;
-    color: var(--neon-pink); /* Розовый цвет */
+    color: var(--neon-pink);
 }
 
 
 .stat p {
     margin-top: 0.5rem;
     opacity: 0.9;
-    font-size: 1.2rem; /* Увеличен размер шрифта */
-    color: var(--text-light); /* Светлый цвет */
+    font-size: 1.2rem;
+    color: var(--text-light);
 }
 
-/* Footer */
 .footer {
     background: #000;
     color: var(--neon-blue);
@@ -264,7 +257,7 @@ body {
 
 .footer p {
     opacity: 0.8;
-    font-size: 1.3rem; /* Увеличен размер шрифта */
+    font-size: 1.3rem;
 }
 
 .footer-links {
@@ -276,23 +269,22 @@ body {
     color: var(--neon-blue);
     text-decoration: none;
     transition: color 0.3s ease;
-    font-size: 1.2rem; /* Увеличен размер шрифта */
+    font-size: 1.2rem;
 }
 
 .footer-links a:hover {
     color: var(--neon-pink);
 }
 
-/* Кнопки */
 .btn {
-    padding: 15px 40px; /* Увеличены отступы */
+    padding: 15px 40px;
     border: none;
     border-radius: 4px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
     font-family: inherit;
-    font-size: 1.4rem; /* Увеличен размер шрифта */
+    font-size: 1.4rem;
 }
 
 .neon-btn {

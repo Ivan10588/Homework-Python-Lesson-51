@@ -1,0 +1,303 @@
+/* Базовые настройки */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: #0a0a14;
+    color: #e0e0ff;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Переменные цветов киберпанк */
+:root {
+    --neon-pink: #ff00ff;
+    --neon-blue: #00f0ff;
+    --dark-bg: #0a0a14;
+    --card-bg: #121225;
+    --accent-purple: #8a2be2;
+    --text-light: #e0e0ff;
+}
+
+/* Hero секция */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(138, 43, 226, 0.2), rgba(255, 0, 255, 0.1));
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px var(--neon-pink), 0 0 20px var(--neon-pink);
+}
+
+.neon {
+    color: var(--neon-pink);
+    text-shadow: 0 0 5px var(--neon-pink), 0 0 15px var(--neon-pink);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.8;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* Секция 2 */
+.section-2 {
+    padding: 80px 0;
+    background: var(--dark-bg);
+}
+
+.section-2 .container {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    justify-content: space-between;
+}
+
+.section-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.3);
+}
+
+.content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.content p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    max-width: 400px;
+}
+
+/* Секция 3 */
+.section-3 {
+    padding: 80px 0;
+    background: linear-gradient(180deg, #0a0a14 0%, #121225 100%);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: var(--card-bg);
+    border: 1px solid rgba(138, 43, 226, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4),
+                0 0 20px rgba(255, 0, 255, 0.2);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin: 1.5rem 0 1rem;
+}
+
+.card p {
+    padding: 0 1rem 1.5rem;
+    opacity: 0.8;
+}
+
+/* Секция 4 */
+.section-4 {
+    padding: 80px 0;
+    background: var(--dark-bg);
+}
+
+.section-4 .container {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    justify-content: space-between;
+    flex-direction: row-reverse; /* изображение справа */
+}
+
+.section-4 .content {
+    flex: 1;
+    text-align: right;
+}
+
+.section-4 h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.section-4 p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+/* Секция 5 */
+.section-5 {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--accent-purple) 0%, var(--neon-pink) 100%);
+    text-align: center;
+}
+
+.section-5 h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.section-5 p {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+    opacity: 0.9;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 3rem;
+}
+
+.stat {
+    text-align: center;
+}
+
+.number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: block;
+}
+
+.stat p {
+    margin-top: 0.5rem;
+    opacity: 0.8;
+}
+
+/* Footer */
+.footer {
+    background: #000;
+    color: var(--neon-blue);
+    padding: 3rem 0;
+    text-align: center;
+    border-top: 1px solid var(--neon-pink);
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.footer p {
+    opacity: 0.7;
+}
+
+.footer-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-links a {
+    color: var(--neon-blue);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--neon-pink);
+}
+
+/* Кнопки */
+.btn {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.neon-btn {
+    background: transparent;
+    border: 2px solid var(--neon-blue);
+    color: var(--neon-blue);
+    text-shadow: 0 0 5px var(--neon-blue);
+}
+
+.neon-btn:hover {
+    background: var(--neon-blue);
+    color: #000;
+    text-shadow: none;
+}
+
+.dark-btn {
+    background: var(--accent-purple);
+    color: white;
+    border: none;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.dark-btn:hover {
+    background: #a020f0;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(138, 43, 226, 0.4);
+}
+
+
